@@ -1,21 +1,25 @@
 project:
   type: website
+  resources:
+    - CNAME
+    - files/*
 
 website:
-  title: "eric-wiemer.github.io"
+  title: "Eric Wiemer"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: resume.qmd
+        text: Resume
 
 format:
   html:
     theme:
-      - cosmo
+      - darkly
       - brand
     css: styles.css
-    toc: true
+    toc: false
 
 
 
