@@ -1,1 +1,158 @@
 /* css styles */
+
+/* ---------- Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
+
+/* ---------- Colors (change these to restyle everything) ---------- */
+:root {
+  --bg: #f3e9dc;
+  --text: #2a2438;
+  --primary: #2F5D46;
+  --accent: #5e3023;
+  --nav: #152614;
+}
+
+/* ---------- Base ---------- */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4,
+.title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+a {
+  color: var(--primary);
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+}
+a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: var(--nav) !important;
+}
+.navbar .navbar-brand,
+.navbar .navbar-title,
+.navbar .nav-link,
+.navbar .menu-text {
+  color: #ffffff !important;
+}
+.navbar .navbar-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.navbar .nav-link:hover {
+  color: var(--accent) !important;
+}
+.navbar .nav-link.active {
+  border-bottom: 2px solid var(--accent);
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.55rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+/* ---------- Profile photo ---------- */
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid var(--accent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  margin: 0;
+}
+
+/* ---------- Footer ---------- */
+.nav-footer {
+  background-color: var(--nav);
+  color: #ffffff;
+  border-top: none;
+}
+.nav-footer a {
+  color: #ffffff;
+}
+/* ---------- Homepage layout: photo left, text right ---------- */
+
+.center {
+  text-align: center;
+}
+
+
+.hero {
+  display: grid;
+  grid-template-columns: 9fr 11fr;
+  column-gap: 3rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.hero-photo,
+.hero-text {
+  min-width: 0;
+}
+
+.hero-photo {
+  margin-top: 6rem;
+}
+
+.hero-photo p,
+.hero-photo figure,
+.hero-photo .quarto-figure {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+  .hero-photo {
+    margin-top: 0;
+  }
+}
+
+/* Text column: body text left-aligned, headers centered */
+.hero-text {
+  text-align: left;
+}
+
+.hero-text h1,
+.hero-text h2,
+.hero-text h3 {
+  text-align: center;
+}
+
+.hero-text h1 {
+  margin-top: 0;
+  line-height: 1.15;
+}
+
+.hero-text .center {
+  text-align: center;
+}
