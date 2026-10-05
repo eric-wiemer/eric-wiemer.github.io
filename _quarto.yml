@@ -3,15 +3,23 @@ project:
   resources:
     - CNAME
     - files/*
+    - images/*
 
 website:
-  title: "Eric Wiemer"
+  title: "Eric Wiemer, PhD"
   navbar:
-    left:
+    right: 
       - href: index.qmd
         text: Home
       - href: resume.qmd
         text: Resume
+      - icon: envelope-fill
+        href: mailto:ewiemer30@gmail.com
+        aria-label: Email
+      - icon: bluesky
+        href: https://bsky.app/profile/ericwiemer.com
+        aria-label: Bluesky
+      
 
 format:
   html:

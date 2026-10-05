@@ -1,13 +1,24 @@
 ---
-title: "Eric Wiemer"
+pagetitle: "Eric Wiemer"
 ---
+::::: {.hero}
 
-## About my work:
-I currently work as a Survey Statistician with the U.S. Census Bureau. Overall, my work is defined by a passion for effective, data-driven stories. I am particularly interested in communication and use computational social science and natural language processing, as well as more traditional methods like surveys and experiments, to measure how interest groups, the news media, and the public influence one another. I mainly work in Python, R, and Tableau.
+:::: {.hero-photo}
+![](images/website_headshot.jpg){.profile-photo fig-alt="Black & white photo of Eric Wiemer"}
+::::
 
-## About my life:
-I’m a corn-fed Midwesterner. In my free time, I play the drums in a punk band and binge on comedy podcasts. Outside of work, I enjoy learning about and engaging with issues related to urban planning and public transportation. More often than not, you can find me riding my beloved yellow road bike and drinking scalding hot coffee. 
+:::: {.hero-text}
+# Hello there!<br>I'm Eric Wiemer!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I’m a corn-fed Midwesterner. In my free time, I play the drums in a punk band and binge on comedy podcasts. More often than not, you can find me riding my beloved yellow road bike and drinking scalding hot coffee.
 
+I currently work as a Survey Statistician with the U.S. Census Bureau. Overall, my work is defined by a passion for effective, data-driven stories. I am particularly interested in communication and use computational social science and natural language processing, as well as more traditional methods like surveys and experiments. I mainly work in Python, R, and Tableau but I earnestly think of myself as a life-long learner!
 
+### You can view and download my current resume here:
+
+::: {.center}
+[My Resume](resume.qmd){.btn .btn-primary}
+:::
+::::
+
+:::::
